@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QA Electrical - Industrial Electricians Ballarat & Wendouree</title>
+<meta name="description" content="Industrial & commercial electricians in Wendouree, Ballarat. Neat workmanship, reliable follow-up, and proper compliance. Call QA Electrical on 0407 333 566.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{
+  --yellow:#FFD60A;
+  --yellow-soft:#FFF4B8;
+  --yellow-tint:#FFFBE6;
+  --charcoal:#1A1A1D;
+  --charcoal-2:#2B2B30;
+  --grey:#5A5A60;
+  --light:#F5F5F7;
+  --white:#fff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Open Sans',sans-serif;color:var(--charcoal);line-height:1.65;background:var(--white);overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Raleway',sans-serif;font-weight:800;line-height:1.15;color:var(--charcoal)}
+h2{font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:1rem}
+h3{font-size:1.3rem}
+p{color:var(--grey)}
+a{text-decoration:none;color:inherit}
+img{max-width:100%}
+.container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:var(--charcoal);border-bottom:3px solid var(--yellow)}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem;max-width:1200px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:.6rem;color:#fff;font-family:'Raleway',sans-serif;font-weight:900;font-size:1.3rem;letter-spacing:.5px}
+.logo-mark{width:38px;height:38px;background:var(--yellow);display:flex;align-items:center;justify-content:center;color:var(--charcoal);clip-path:polygon(50% 0,100% 38%,82% 100%,18% 100%,0 38%)}
+.logo span{color:var(--yellow)}
+.nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
+.nav-links a{color:#fff;font-weight:600;font-size:.95rem;transition:color .2s}
+.nav-links a:hover{color:var(--yellow)}
+.nav-cta{background:var(--yellow);color:var(--charcoal)!important;padding:.65rem 1.2rem;border-radius:4px}
+.nav-cta:hover{background:#fff;color:var(--charcoal)!important}
+.hamburger{display:none;background:none;border:none;color:#fff;font-size:1.6rem;cursor:pointer;min-width:48px;min-height:48px}
+
+/* HERO */
+.hero{position:relative;background:linear-gradient(135deg,#1A1A1D 0%,#2B2B30 60%,#3a3a3f 100%);color:#fff;overflow:hidden;padding:5rem 0 6rem}
+.hero::before{content:"";position:absolute;inset:0;background-image:
+  linear-gradient(rgba(255,214,10,.07) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,214,10,.07) 1px,transparent 1px);
+  background-size:50px 50px;pointer-events:none}
+.hero::after{content:"";position:absolute;right:-150px;top:-150px;width:600px;height:600px;background:radial-gradient(circle,rgba(255,214,10,.18),transparent 65%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;align-items:center}
+.hero-tag{display:inline-flex;align-items:center;gap:.6rem;background:rgba(255,214,10,.15);color:var(--yellow);padding:.5rem 1rem;border-radius:50px;font-size:.85rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:1.5rem;border:1px solid rgba(255,214,10,.3)}
+.hero h1{color:#fff;font-size:clamp(2rem,4.8vw,3.6rem);margin-bottom:1.3rem}
+.hero h1 .accent{color:var(--yellow);position:relative;display:inline-block}
+.hero h1 .accent::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:4px;background:var(--yellow);opacity:.4}
+.hero-sub{font-size:1.1rem;color:#d8d8dc;margin-bottom:2rem;max-width:560px}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:1rem 1.7rem;font-weight:700;font-family:'Raleway',sans-serif;border-radius:4px;transition:all .25s;cursor:pointer;border:none;font-size:1rem;min-height:48px;justify-content:center}
+.btn-primary{background:var(--yellow);color:var(--charcoal)}
+.btn-primary:hover{background:#fff;transform:translateY(-2px);box-shadow:0 10px 25px rgba(255,214,10,.35)}
+.btn-outline{background:transparent;color:#fff;border:2px solid #fff}
+.btn-outline:hover{background:#fff;color:var(--charcoal);transform:translateY(-2px)}
+.hero-visual{position:relative;height:380px}
+.hero-visual svg{width:100%;height:100%}
+.hero-badge{position:absolute;bottom:-20px;left:0;background:var(--yellow);color:var(--charcoal);padding:1rem 1.3rem;border-radius:6px;display:flex;align-items:center;gap:.8rem;font-weight:700;box-shadow:0 15px 40px rgba(0,0,0,.4);font-family:'Raleway',sans-serif}
+.hero-badge i{font-size:1.5rem}
+
+/* SECTIONS */
+section{padding:5rem 0}
+.section-tint{background:var(--yellow-tint)}
+.eyebrow{display:inline-block;color:#a88a00;font-weight:700;font-size:.85rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:.8rem;padding-left:2.5rem;position:relative}
+.eyebrow::before{content:"";position:absolute;left:0;top:50%;width:2rem;height:2px;background:var(--yellow);transform:translateY(-50%)}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:center}
+.about-text p{margin-bottom:1.2rem;font-size:1.05rem}
+.stats{display:grid;grid-template-columns:1fr;gap:1.2rem}
+.stat{background:var(--white);padding:2rem;border-radius:12px;border-left:6px solid var(--yellow);box-shadow:0 8px 30px rgba(0,0,0,.06);display:flex;align-items:center;gap:1.5rem;transition:transform .25s}
+.stat:hover{transform:translateX(6px)}
+.stat-num{font-family:'Raleway',sans-serif;font-weight:900;font-size:2.6rem;color:var(--charcoal);line-height:1}
+.stat-label{font-weight:600;color:var(--grey);text-transform:uppercase;font-size:.85rem;letter-spacing:1px}
+
+/* SERVICES */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem;margin-top:3rem}
+.service-card{background:#fff;padding:2.2rem;border-radius:8px;border:1px solid #ececec;transition:all .3s;position:relative;overflow:hidden}
+.service-card::before{content:"";position:absolute;top:0;left:0;width:0;height:4px;background:var(--yellow);transition:width .3s}
+.service-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.08);border-color:var(--yellow)}
+.service-card:hover::before{width:100%}
+.service-icon{width:60px;height:60px;background:var(--yellow);color:var(--charcoal);display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:1.5rem;margin-bottom:1.3rem}
+.service-card h3{margin-bottom:.7rem}
+
+/* WHY US */
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;margin-top:3rem}
+.why-item{display:flex;gap:1.3rem;padding:1.8rem;background:#fff;border-radius:10px;border-bottom:4px solid transparent;transition:all .3s;box-shadow:0 4px 20px rgba(0,0,0,.04)}
+.why-item:hover{border-bottom-color:var(--yellow);transform:translateY(-4px)}
+.why-icon{flex-shrink:0;width:54px;height:54px;background:var(--charcoal);color:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:1.3rem;border-radius:8px}
+.why-item h3{margin-bottom:.5rem;font-size:1.15rem}
+
+/* PROCESS */
+.process{background:var(--charcoal);color:#fff;position:relative;overflow:hidden}
+.process::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:repeating-linear-gradient(90deg,var(--yellow) 0,var(--yellow) 30px,var(--charcoal) 30px,var(--charcoal) 60px)}
+.process h2{color:#fff}
+.process .eyebrow{color:var(--yellow)}
+.process p.section-intro{color:#bbb}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem;position:relative}
+.process-steps::before{content:"";position:absolute;top:35px;left:8%;right:8%;height:2px;background:repeating-linear-gradient(90deg,var(--yellow) 0,var(--yellow) 8px,transparent 8px,transparent 16px);z-index:0}
+.step{position:relative;text-align:center;z-index:1}
+.step-num{width:70px;height:70px;background:var(--yellow);color:var(--charcoal);font-family:'Raleway',sans-serif;font-weight:900;font-size:1.5rem;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;border:5px solid var(--charcoal);box-shadow:0 0 0 2px var(--yellow)}
+.step h3{color:#fff;margin-bottom:.6rem}
+.step p{color:#bbb;font-size:.95rem}
+
+/* TESTIMONIALS */
+.testimonials{background:var(--yellow-tint);position:relative}
+.testimonials::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 2px 2px,rgba(255,214,10,.4) 1px,transparent 0);background-size:30px 30px;opacity:.5;pointer-events:none}
+.testimonials .container{position:relative}
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem;margin-top:3rem}
+.test-card{background:#fff;padding:2rem;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.06);position:relative}
+.test-card::before{content:"\201C";position:absolute;top:-15px;left:20px;font-size:5rem;color:var(--yellow);font-family:Georgia,serif;line-height:1}
+.stars{color:var(--yellow);font-size:1.1rem;margin-bottom:.8rem;letter-spacing:2px}
+.test-text{font-style:italic;margin-bottom:1.2rem;color:var(--charcoal-2)}
+.test-name{font-weight:700;font-family:'Raleway',sans-serif;color:var(--charcoal);display:flex;align-items:center;gap:.6rem}
+.test-name::before{content:"";width:30px;height:2px;background:var(--yellow)}
+
+/* FAQ */
+.faq-list{max-width:850px;margin:3rem auto 0}
+.faq-item{background:#fff;border:1px solid #ececec;border-radius:8px;margin-bottom:1rem;overflow:hidden;transition:box-shadow .25s}
+.faq-item.open{box-shadow:0 10px 30px rgba(0,0,0,.08);border-color:var(--yellow)}
+.faq-q{width:100%;padding:1.3rem 1.5rem;background:none;border:none;text-align:left;cursor:pointer;font-weight:700;font-family:'Raleway',sans-serif;font-size:1.05rem;color:var(--charcoal);display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:48px}
+.faq-q i{color:var(--yellow);transition:transform .3s;flex-shrink:0}
+.faq-item.open .faq-q i{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;padding:0 1.5rem}
+.faq-item.open .faq-a{max-height:300px;padding-bottom:1.3rem}
+.faq-a p{color:var(--grey)}
+
+/* HOURS / LOCATION */
+.hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:3rem}
+.hours-card{background:#fff;padding:2.5rem;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.06);border-top:6px solid var(--yellow)}
+.hours-card h3{margin-bottom:1.5rem;display:flex;align-items:center;gap:.7rem}
+.hours-card h3 i{color:var(--yellow)}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:.85rem 0;border-bottom:1px dashed #e5e5e5;font-weight:500}
+.hours-list li:last-child{border-bottom:none}
+.hours-list .day{font-weight:700;color:var(--charcoal)}
+.hours-list .closed{color:#c44}
+.map-wrap{border-radius:10px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.06);position:relative;aspect-ratio:4/5;min-height:380px}
+.map-wrap iframe{width:100%;height:100%;border:0}
+
+/* CONTACT */
+.contact{background:var(--charcoal);color:#fff;text-align:center;padding:5rem 0}
+.contact h2{color:#fff}
+.contact p{color:#ccc;margin-bottom:2rem;max-width:600px;margin-left:auto;margin-right:auto}
+.call-btn{display:inline-flex;align-items:center;gap:1rem;background:var(--yellow);color:var(--charcoal);padding:1.3rem 2.5rem;border-radius:50px;font-family:'Raleway',sans-serif;font-weight:800;font-size:1.4rem;transition:all .25s;box-shadow:0 10px 30px rgba(255,214,10,.3)}
+.call-btn:hover{transform:translateY(-3px);box-shadow:0 15px 40px rgba(255,214,10,.5);background:#fff}
+.call-btn i{font-size:1.2rem}
+.contact-form{max-width:600px;margin:3rem auto 0;text-align:left}
+.contact-form input,.contact-form textarea{width:100%;padding:.95rem 1.1rem;margin-bottom:1rem;border:1px solid #444;background:rgba(255,255,255,.05);color:#fff;border-radius:6px;font-family:inherit;font-size:1rem}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#888}
+.contact-form input:focus,.contact-form textarea:focus{outline:2px solid var(--yellow);border-color:var(--yellow)}
+.contact-form textarea{min-height:120px;resize:vertical}
+
+/* FOOTER */
+footer{background:#0d0d0f;color:#bbb;padding:3.5rem 0 1.5rem}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+footer h4{color:#fff;font-size:1.05rem;margin-bottom:1.2rem;letter-spacing:1px;text-transform:uppercase}
+footer ul{list-style:none}
+footer ul li{margin-bottom:.6rem}
+footer a:hover{color:var(--yellow)}
+.foot-info p{color:#888;font-size:.95rem;margin-bottom:.5rem}
+.foot-info i{color:var(--yellow);margin-right:.5rem;width:18px}
+.copy{border-top:1px solid #2a2a2d;padding-top:1.5rem;text-align:center;color:#666;font-size:.9rem}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .services-grid,.test-grid{grid-template-columns:repeat(2,1fr)}
+  .process-steps{grid-template-columns:repeat(2,1fr);gap:2rem}
+  .process-steps::before{display:none}
+}
+@media(max-width:768px){
+  .nav-links{position:fixed;top:73px;left:0;right:0;background:var(--charcoal);flex-direction:column;padding:0;max-height:0;overflow:hidden;transition:max-height .35s;gap:0;border-top:1px solid #333}
+  .nav-links.open{max-height:500px}
+  .nav-links li{width:100%;border-bottom:1px solid #2a2a2d}
+  .nav-links a{display:block;padding:1.1rem 1.5rem;width:100%}
+  .nav-cta{margin:1rem 1.5rem;display:inline-block!important}
+  .hamburger{display:block}
+  .hero-grid,.about-grid,.hours-grid{grid-template-columns:1fr;gap:2.5rem}
+  .hero-visual{height:240px;display:none}
+  .services-grid,.why-grid,.test-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr;gap:2rem}
+  section{padding:3.5rem 0}
+  .hero{padding:3rem 0 4rem}
+}
+@media(max-width:480px){
+  .container{padding:0 1rem}
+  .btn{width:100%}
+  .hero-btns{flex-direction:column}
+  .stat{padding:1.5rem;gap:1rem}
+  .stat-num{font-size:2rem}
+  .service-card,.why-item,.hours-card{padding:1.5rem}
+  .call-btn{font-size:1.1rem;padding:1.1rem 1.7rem}
+  .process-steps{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo"><span class="logo-mark"><i class="fa-solid fa-bolt"></i></span>QA<span>.Electrical</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact" class="nav-cta">Call Now</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-tag"><i class="fa-solid fa-shield-halved"></i> Licensed Industrial Sparkies</span>
+        <h1>Industrial & Commercial Electrical Work <span class="accent">Done Properly</span> the First Time</h1>
+        <p class="hero-sub">Based in Wendouree, QA Electrical delivers neat, fully compliant industrial electrical solutions for businesses across Ballarat and the wider Central Highlands region.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-clipboard-check"></i> Request a Site Visit</a>
+          <a href="#services" class="btn btn-outline"><i class="fa-solid fa-file-lines"></i> Get a Detailed Quote</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#FFD60A" stop-opacity=".9"/>
+              <stop offset="1" stop-color="#FFD60A" stop-opacity=".2"/>
+            </linearGradient>
+          </defs>
+          <circle cx="200" cy="200" r="160" fill="none" stroke="#FFD60A" stroke-width="2" stroke-dasharray="4 8" opacity=".6"/>
+          <circle cx="200" cy="200" r="110" fill="none" stroke="#FFD60A" stroke-width="2" opacity=".4"/>
+          <polygon points="200,80 240,180 320,180 255,235 280,330 200,275 120,330 145,235 80,180 160,180" fill="url(#g1)" stroke="#FFD60A" stroke-width="3"/>
+          <circle cx="200" cy="200" r="30" fill="#FFD60A"/>
+          <path d="M195 185 L205 200 L195 200 L205 215" stroke="#1A1A1D" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="hero-badge"><i class="fa-solid fa-bolt"></i> AS/NZS 3000 Compliant</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="eyebrow">About QA Electrical</span>
+        <h2>Sparkies Who Sweat the Details</h2>
+        <p>QA Electrical is an industrial and commercial electrical contractor working out of Caravan Street in Wendouree. We've built our reputation on the kind of work clients actually notice — tidy installations, clean cable runs, and follow-up that doesn't stop the day the job is signed off.</p>
+        <p>Whether it's a grid connection that takes patience to see through or a complex factory fit-out, we treat every project like our name's on it, because it is.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="stat-num">20+</div><div class="stat-label">Years in the Trade</div></div>
+        <div class="stat"><div class="stat-num">100%</div><div class="stat-label">5-Star Reviews</div></div>
+        <div class="stat"><div class="stat-num">24/7</div><div class="stat-label">Industrial Support</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section-tint">
+  <div class="container">
+    <span class="eyebrow">What We Do</span>
+    <h2>Industrial & Commercial Electrical Services</h2>
+    <div class="services-grid">
+      <div class="service-card"><div class="service-icon"><i class="fa-solid fa-bolt"></i></div><h3>Industrial Electrical Installations</h3><p>From factory floors to processing plants across the Ballarat region, we design and install three-phase systems, switchboards, and machinery wiring built to Australian Standards. Every install is documented, labelled, and handed over ready for audit.</p></div>
+      <div class="service-card"><div class="service-icon"><i class="fa-solid fa-plug"></i></div><h3>Commercial Fit-Outs & Upgrades</h3><p>We handle the full electrical scope for commercial premises — lighting, power, data, and emergency systems — coordinated around your trading hours to minimise disruption. Ideal for warehouses, workshops, and office-industrial hybrids.</p></div>
+      <div class="service-card"><div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div><h3>Solar & Grid Connections</h3><p>We manage commercial solar installations end-to-end, including the often-tricky grid connection process with your local network provider. We stay on the job until the meter's spinning the right way.</p></div>
+      <div class="service-card"><div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div><h3>Switchboard Upgrades & Compliance</h3><p>Older industrial switchboards are a common failure point and a serious safety risk. We upgrade and certify boards to current standards, including RCD protection, fault-current ratings, and clear circuit identification.</p></div>
+      <div class="service-card"><div class="service-icon"><i class="fa-solid fa-bolt"></i></div><h3>Preventative Maintenance & Testing</h3><p>Scheduled testing, thermal imaging, and tag-and-test services that keep your operation compliant and your insurer happy. We work around production schedules so you're not losing hours to electrical downtime.</p></div>
+      <div class="service-card" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;background:var(--charcoal);color:#fff;border-color:var(--charcoal)"><div class="service-icon"><i class="fa-solid fa-headset"></i></div><h3 style="color:#fff">Need Something Else?</h3><p style="color:#bbb">Industrial work doesn't always fit neat boxes. Give us a call and we'll talk through your project.</p><a href="#contact" class="btn btn-primary" style="margin-top:1.2rem">Get in Touch</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="container">
+    <span class="eyebrow">Why Choose QA Electrical</span>
+    <h2>The Difference is in the Detail</h2>
+    <div class="why-grid">
+      <div class="why-item"><div class="why-icon"><i class="fa-solid fa-ruler-combined"></i></div><div><h3>Workmanship You Can Inspect</h3><p>Our installations are neat enough to photograph — straight conduit runs, labelled circuits, and properly dressed cabling. It's not just pride; tidy work is safer and easier to maintain down the track.</p></div></div>
+      <div class="why-item"><div class="why-icon"><i class="fa-solid fa-phone-volume"></i></div><div><h3>We Actually Follow Up</h3><p>Industrial projects often have moving parts that take weeks or months to finalise, like grid connections and commissioning. We see them through to the end, not just to the invoice.</p></div></div>
+      <div class="why-item"><div class="why-icon"><i class="fa-solid fa-industry"></i></div><div><h3>Industrial-Grade Experience</h3><p>Three-phase systems, motor controls, PLCs, and high-load switchboards aren't a sideline for us — they're our core work. You're getting sparkies who understand industrial environments, not domestic electricians stretching themselves.</p></div></div>
+      <div class="why-item"><div class="why-icon"><i class="fa-solid fa-location-dot"></i></div><div><h3>Local to Ballarat</h3><p>We're based in Wendouree and work across Ballarat, Creswick, Buninyong, and the surrounding districts. Local means faster response times and a contractor who'll still be here next year when you need us again.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="process">
+  <div class="container">
+    <span class="eyebrow">How We Work</span>
+    <h2>A Straight-Forward, Four-Step Process</h2>
+    <p class="section-intro">No surprises, no vague timelines — just clear communication from first site visit to final handover.</p>
+    <div class="process-steps">
+      <div class="step"><div class="step-num">01</div><h3>Site Visit & Scope</h3><p>We come out to your site, walk the job with you, and get a proper understanding of what you actually need.</p></div>
+      <div class="step"><div class="step-num">02</div><h3>Detailed Quote</h3><p>You receive a clear, itemised quote with no vague allowances or surprise extras buried in the fine print.</p></div>
+      <div class="step"><div class="step-num">03</div><h3>Scheduled Installation</h3><p>We book the work around your operations and turn up when we said we would, with the right gear and the right crew.</p></div>
+      <div class="step"><div class="step-num">04</div><h3>Commissioning & Handover</h3><p>We test, certify, document, and follow up on any outstanding items like grid connections until the job is genuinely complete.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <span class="eyebrow">Reviews</span>
+    <h2>What Ballarat Businesses Say About Us</h2>
+    <div class="test-grid">
+      <div class="test-card"><div class="stars">★★★★★</div><p class="test-text">"Excellent service. Neat workmanship and good follow up when it became possible to connect to the grid."</p><div class="test-name">Lawrie Hocking</div></div>
+      <div class="test-card"><div class="stars">★★★★★</div><p class="test-text">"Top-quality industrial electrical work — exactly what we needed. Highly recommended."</p><div class="test-name">Don Langley</div></div>
+      <div class="test-card"><div class="stars">★★★★☆</div><p class="test-text">"Professional business."</p><div class="test-name">Glenn Lavery</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section-tint">
+  <div class="container">
+    <span class="eyebrow">FAQ</span>
+    <h2>Common Questions, Answered Properly</h2>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q">Do you only work on industrial sites, or do you take on commercial jobs too? <i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>We cover both industrial and commercial electrical work across the Ballarat region. If your project involves three-phase power, complex switchboards, or larger commercial premises, we're well set up for it.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Can you handle the grid connection process for solar or new supply? <i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Yes. We manage the full process with Powercor and the relevant network providers, including paperwork, inspections, and meter changeovers. It can be a slow process at their end, but we stay on top of it until you're connected.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Are your installations compliant with Australian Standards? <i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Every job is completed to AS/NZS 3000 (the Wiring Rules) and any applicable industrial standards. You'll receive a Certificate of Electrical Safety on completion, and we keep documentation tidy for any future audits or insurance requirements.</p></div></div>
+      <div class="faq-item"><button class="faq-q">How far do you travel from Wendouree? <i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>We regularly work throughout Ballarat, the Central Highlands, and surrounding districts including Daylesford, Bacchus Marsh, and Ararat. For larger industrial projects we'll travel further — give us a call and we'll work it out.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="hours">
+  <div class="container">
+    <span class="eyebrow">Visit & Hours</span>
+    <h2>Find Us in Wendouree</h2>
+    <div class="hours-grid">
+      <div class="hours-card">
+        <h3><i class="fa-solid fa-clock"></i> Trading Hours</h3>
+        <ul class="hours-list">
+          <li><span class="day">Monday</span><span>7:30 AM – 5:00 PM</span></li>
+          <li><span class="day">Tuesday</span><span>7:30 AM – 5:00 PM</span></li>
+          <li><span class="day">Wednesday</span><span>7:30 AM – 5:00 PM</span></li>
+          <li><span class="day">Thursday</span><span>7:30 AM – 5:00 PM</span></li>
+          <li><span class="day">Friday</span><span>7:30 AM – 5:00 PM</span></li>
+          <li><span class="day">Saturday</span><span class="closed">Closed</span></li>
+          <li><span class="day">Sunday</span><span class="closed">Closed</span></li>
+        </ul>
+        <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #eee">
+          <p style="margin-bottom:.4rem;color:var(--charcoal);font-weight:700"><i class="fa-solid fa-location-dot" style="color:var(--yellow)"></i> Unit 2/5 Caravan St, Wendouree VIC 3350</p>
+          <p><i class="fa-solid fa-phone" style="color:var(--yellow)"></i> <a href="tel:0407333566" style="color:var(--charcoal);font-weight:600">0407 333 566</a></p>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps?q=Unit+2/5+Caravan+St+Wendouree+VIC+3350&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="QA Electrical Location"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <span class="eyebrow" style="color:var(--yellow)">Get in Touch</span>
+    <h2>Ready to Talk About Your Project?</h2>
+    <p>Call us directly to organise a site visit, or send a quick message and we'll get back to you within one business day.</p>
+    <a href="tel:0407333566" class="call-btn"><i class="fa-solid fa-phone"></i> 0407 333 566</a>
+    <form class="contact-form" action="mailto:info@qaelectrical.com.au" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Email address" required>
+      <input type="text" name="subject" placeholder="Project type (e.g. switchboard upgrade)">
+      <textarea name="message" placeholder="Tell us about your project..." required></textarea>
+      <button type="submit" class="btn btn-primary" style="width:100%"><i class="fa-solid fa-paper-plane"></i> Send Enquiry</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-info">
+        <a href="#" class="logo" style="margin-bottom:1rem"><span class="logo-mark"><i class="fa-solid fa-bolt"></i></span>QA<span>.Electrical</span></a>
+        <p style="margin-top:1rem">Industrial and commercial electrical contractors based in Wendouree, servicing Ballarat and the Central Highlands. Neat workmanship, proper compliance, real follow-up.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-info">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-location-dot"></i> Unit 2/5 Caravan St,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wendouree VIC 3350</p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:0407333566">0407 333 566</a></p>
+        <p><i class="fa-solid fa-clock"></i> Mon–Fri: 7:30 AM – 5:00 PM</p>
+      </div>
+    </div>
+    <div class="copy">© 2026 QA Electrical - Industrial Services. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+// Mobile nav
+const ham=document.getElementById('hamburger');
+const links=document.getElementById('navLinks');
+ham.addEventListener('click',()=>{
+  links.classList.toggle('open');
+  const i=ham.querySelector('i');
+  i.classList.toggle('fa-bars');
+  i.classList.toggle('fa-xmark');
+});
+document.querySelectorAll('#navLinks a').forEach(a=>{
+  a.addEventListener('click',()=>{
+    links.classList.remove('open');
+    const i=ham.querySelector('i');
+    i.classList.add('fa-bars');
+    i.classList.remove('fa-xmark');
+  });
+});
+// FAQ
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    q.parentElement.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>
